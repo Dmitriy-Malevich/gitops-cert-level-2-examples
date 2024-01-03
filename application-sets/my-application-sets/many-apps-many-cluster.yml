@@ -24,10 +24,10 @@ spec:
       destination:
         server: '{{server}}'
         namespace: '{{path.basename}}'
-    syncPolicy:
-      automated:
-        selfHeal: true
-        allowEmpty: false
-        prune: false
-      syncOptions:
-        - CreateNamespace
+      syncPolicy:
+        automated:
+          selfHeal: true
+          allowEmpty: false
+          prune: false
+        syncOptions:
+          - CreateNamespace
