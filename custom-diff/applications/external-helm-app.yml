@@ -3,6 +3,11 @@ kind: Application
 metadata:
   name: helm-example02
   namespace: argocd
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    jsonPointers:
+    - /spec/secrets
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
