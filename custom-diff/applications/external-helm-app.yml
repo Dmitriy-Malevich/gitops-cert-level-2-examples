@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
   ignoreDifferences:
   - group: apps
-    kind: Deployment
+    kind: Secret
     jsonPointers:
     - /spec/secrets
   finalizers:
